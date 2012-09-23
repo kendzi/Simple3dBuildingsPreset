@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="Tomasz Kędziora (Kendzi)" shortdescription="Simple 3D Buildings" description="Presets for Simple 3D building properties"
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="Tomasz Kędziora (Kendzi)" shortdescription="3D Simple Buildings" description="Presets for Simple 3D building properties"
 	
 	
 	>
@@ -71,24 +71,27 @@
 				<text text="Wall colour" key="building:colour"/>
 				<!-- we need to agree some values!!! -->
 				<combo text="Wall material" key="building:material" delete_if_empty="true">
-					<list_entry value="plaster" display_value="plaster" icon="http://openstreetmap.pl/kendzi/preset/material_plaster_64.png" 
-						short_description="Warning this may change!" />
-					<list_entry value="brick" display_value="brick" icon="http://openstreetmap.pl/kendzi/preset/material_brick_64.png" 
-						short_description="Warning this may change!" />
-					<list_entry value="???" 
-						short_description="Warning this may change!" />
+					<list_entry value="plaster" 										icon="http://openstreetmap.pl/kendzi/preset/facade_mat_plaster_64.png" />
+					<list_entry value="concrete" 										icon="http://openstreetmap.pl/kendzi/preset/facade_mat_concrete.png"/>
+					<list_entry value="brick" 											icon="http://openstreetmap.pl/kendzi/preset/facade_mat_brick_64.png" />
+					<list_entry value="wood" 							 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_wood.png"/>
+					<list_entry value="stone" 							 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_stone.png"/>
+					<list_entry value="glass" 							 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_glass.png"/>
+					<list_entry value="???"		short_description="Warning this may change!" /> 
 				</combo>
 				<text text="Roof colour" key="roof:colour"/>
-				<text text="Roof material" key="roof:material"/>
 				<!-- we need to agree some values!!! -->
-<!-- 				<combo text="Roof material" key="roof:material" delete_if_empty="true"> -->
-<!-- 					<list_entry value="roofTiles" short_description="Warning this may change!" 		icon="http://openstreetmap.pl/kendzi/preset/roof_roofTiles.png"  -->
-<!-- 						/> -->
-<!-- 					<list_entry value="roofingFelt" short_description="Warning this may change!"  -->
-<!-- 						/> -->
-<!-- 					<list_entry value="???" short_description="Warning this may change!"  -->
-<!-- 						/> -->
-<!-- 				</combo> -->
+				<combo text="Roof material" key="roof:material" delete_if_empty="true">
+					<list_entry value="roof_tiles" 	short_description="Clasic tiles" 	icon="http://openstreetmap.pl/kendzi/preset/roof_mat_roof_tiles.png"
+								display_value="roof tiles"/>
+					<list_entry value="tar_paper" 	short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/roof_mat_tar_paper.png"
+								display_value="tar paper"/>
+					<list_entry value="concrete" 	short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_concrete.png"/>
+					<list_entry value="copper" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/cc2/roof_mat_copper.png"/>
+					<list_entry value="glass" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_glass.png"/>
+					<list_entry value="slate" 		short_description="Kind of stone" 	icon="http://openstreetmap.pl/kendzi/preset/roof_mat_slate.png"/>
+					<list_entry value="???" short_description="Warning this may change!"/>
+				</combo>
      		</optional>     		
      	</item>
 
@@ -146,24 +149,27 @@
 				<text text="Wall colour" key="building:colour"/>
 				<!-- we need to agree some values!!! -->
 				<combo text="Wall material" key="building:material" delete_if_empty="true">
-					<list_entry value="plaster" display_value="plaster" icon="http://openstreetmap.pl/kendzi/preset/material_plaster_64.png" 
-						short_description="Warning this may change!" />
-					<list_entry value="brick" display_value="brick" icon="http://openstreetmap.pl/kendzi/preset/material_brick_64.png" 
-						short_description="Warning this may change!" />
-					<list_entry value="???" 
-						short_description="Warning this may change!" />
+					<list_entry value="plaster" 										icon="http://openstreetmap.pl/kendzi/preset/facade_mat_plaster_64.png" />
+					<list_entry value="concrete" 										icon="http://openstreetmap.pl/kendzi/preset/facade_mat_concrete.png"/>
+					<list_entry value="brick" 											icon="http://openstreetmap.pl/kendzi/preset/facade_mat_brick_64.png" />
+					<list_entry value="wood" 							 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_wood.png"/>
+					<list_entry value="stone" 							 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_stone.png"/>
+					<list_entry value="glass" 							 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_glass.png"/>
+					<list_entry value="???"		short_description="Warning this may change!" /> 
 				</combo>
 				<text text="Roof colour" key="roof:colour"/>
-				<text text="Roof material" key="roof:material"/>
 				<!-- we need to agree some values!!! -->
-<!-- 				<combo text="Roof material" key="roof:material" delete_if_empty="true"> -->
-<!-- 					<list_entry value="roofTiles" short_description="Warning this may change!" 		icon="http://openstreetmap.pl/kendzi/preset/roof_roofTiles.png"  -->
-<!-- 						/> -->
-<!-- 					<list_entry value="roofingFelt" short_description="Warning this may change!"  -->
-<!-- 						/> -->
-<!-- 					<list_entry value="???" short_description="Warning this may change!"  -->
-<!-- 						/> -->
-<!-- 				</combo> -->
+				<combo text="Roof material" key="roof:material" delete_if_empty="true">
+					<list_entry value="roof_tiles" 	short_description="Clasic tiles" 	icon="http://openstreetmap.pl/kendzi/preset/roof_mat_roof_tiles.png"
+								display_value="roof tiles"/>
+					<list_entry value="tar_paper" 	short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/roof_mat_tar_paper.png"
+								display_value="tar paper"/>
+					<list_entry value="concrete" 	short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_concrete.png"/>
+					<list_entry value="copper" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/cc2/roof_mat_copper.png"/>
+					<list_entry value="glass" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_glass.png"/>
+					<list_entry value="slate" 		short_description="Kind of stone" 	icon="http://openstreetmap.pl/kendzi/preset/roof_mat_slate.png"/>
+					<list_entry value="???" short_description="Warning this may change!"/>
+				</combo>
      		</optional>     		
      	</item>
 
