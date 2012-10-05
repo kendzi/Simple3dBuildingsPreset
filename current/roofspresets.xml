@@ -92,8 +92,8 @@
 					<list_entry value="copper" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/cc2/roof_mat_copper.png"/>
 					<list_entry value="glass" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_glass.png"/>
 					<list_entry value="slate" 		short_description="Kind of stone" 	icon="http://openstreetmap.pl/kendzi/preset/roof_mat_slate.png"/>
-					<list_entry value="thatch" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/roof_mat_thatch.png"/>
-					<list_entry value="eternit" 	short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/roof_mat_eternit.png"/>
+					<list_entry value="thatch" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/cc2/roof_mat_thatch.png"/>
+					<list_entry value="eternit" 	short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/cc2/roof_mat_eternit.png"/>
 					<list_entry value="???" short_description="Warning this may change!"/>
 				</combo>
      		</optional>     		
@@ -173,8 +173,8 @@
 					<list_entry value="copper" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/cc2/roof_mat_copper.png"/>
 					<list_entry value="glass" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_glass.png"/>
 					<list_entry value="slate" 		short_description="Kind of stone" 	icon="http://openstreetmap.pl/kendzi/preset/roof_mat_slate.png"/>
-					<list_entry value="thatch" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/roof_mat_thatch.png"/>
-					<list_entry value="eternit" 	short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/roof_mat_eternit.png"/>
+					<list_entry value="thatch" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/cc2/roof_mat_thatch.png"/>
+					<list_entry value="eternit" 	short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/cc2/roof_mat_eternit.png"/>
 					<list_entry value="???" short_description="Warning this may change!"/>
 				</combo>
      		</optional>     		
