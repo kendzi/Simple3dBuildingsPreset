@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="Tomasz Kędziora (Kendzi)" shortdescription="3D Simple Buildings" description="Presets for Simple 3D building properties"
-	
+	version="0.4"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd"
 	
 	>
-<!-- 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" -->
-<!-- 	xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd" -->
+ 
 
 <!-- Many images come from wiki.openstreetmap.org -->
 <!--
@@ -77,6 +78,7 @@
 					<list_entry value="wood" 							 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_wood.png"/>
 					<list_entry value="stone" 							 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_stone.png"/>
 					<list_entry value="glass" 							 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_glass.png"/>
+					<list_entry value="timber_framing" 							 		icon="http://openstreetmap.pl/kendzi/preset/facade_mat_timber_framing.png"/>
 					<list_entry value="???"		short_description="Warning this may change!" /> 
 				</combo>
 				<text text="Roof colour" key="roof:colour"/>
@@ -90,6 +92,8 @@
 					<list_entry value="copper" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/cc2/roof_mat_copper.png"/>
 					<list_entry value="glass" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_glass.png"/>
 					<list_entry value="slate" 		short_description="Kind of stone" 	icon="http://openstreetmap.pl/kendzi/preset/roof_mat_slate.png"/>
+					<list_entry value="thatch" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/roof_mat_thatch.png"/>
+					<list_entry value="eternit" 	short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/roof_mat_eternit.png"/>
 					<list_entry value="???" short_description="Warning this may change!"/>
 				</combo>
      		</optional>     		
@@ -155,6 +159,7 @@
 					<list_entry value="wood" 							 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_wood.png"/>
 					<list_entry value="stone" 							 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_stone.png"/>
 					<list_entry value="glass" 							 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_glass.png"/>
+					<list_entry value="timber_framing" 							 		icon="http://openstreetmap.pl/kendzi/preset/facade_mat_timber_framing.png"/>
 					<list_entry value="???"		short_description="Warning this may change!" /> 
 				</combo>
 				<text text="Roof colour" key="roof:colour"/>
@@ -168,6 +173,8 @@
 					<list_entry value="copper" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/cc2/roof_mat_copper.png"/>
 					<list_entry value="glass" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_glass.png"/>
 					<list_entry value="slate" 		short_description="Kind of stone" 	icon="http://openstreetmap.pl/kendzi/preset/roof_mat_slate.png"/>
+					<list_entry value="thatch" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/roof_mat_thatch.png"/>
+					<list_entry value="eternit" 	short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/roof_mat_eternit.png"/>
 					<list_entry value="???" short_description="Warning this may change!"/>
 				</combo>
      		</optional>     		
