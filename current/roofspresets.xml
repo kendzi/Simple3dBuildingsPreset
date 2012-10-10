@@ -78,9 +78,9 @@
 					<list_entry value="wood" 							 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_wood.png"/>
 					<list_entry value="stone" 							 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_stone.png"/>
 					<list_entry value="glass" 							 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_glass.png"/>
-					<list_entry value="timber_framing" 							 		icon="http://openstreetmap.pl/kendzi/preset/facade_mat_timber_framing.png"/>
+					<list_entry value="timber_framing" display_value="timber framing"	icon="http://openstreetmap.pl/kendzi/preset/facade_mat_timber_framing.png"/>
 					<list_entry value="metal" 									 		icon="http://openstreetmap.pl/kendzi/preset/facade_mat_metal.png"/>
-					<list_entry value="???"		short_description="Warning this may change!" /> 
+					<list_entry value="???" short_description="Warning this may change!" icon="http://openstreetmap.pl/kendzi/preset/warn.png"/>
 				</combo>
 				<text text="Roof colour" key="roof:colour"/>
 				<!-- we need to agree some values!!! -->
@@ -96,7 +96,9 @@
 					<list_entry value="eternit" 	short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/cc2/roof_mat_eternit.png"/>
 					<list_entry value="thatch" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/cc2/roof_mat_thatch.png"/>
 					<list_entry value="metal" 									 		icon="http://openstreetmap.pl/kendzi/preset/facade_mat_metal.png"/>
-					<list_entry value="???" short_description="Warning this may change!"/>
+					<list_entry value="grass" 									 		icon="http://openstreetmap.pl/kendzi/preset/roof_mat_grass.png"/>
+					<list_entry value="gravel" 									 		icon="http://openstreetmap.pl/kendzi/preset/roof_mat_gravel.png"/>
+					<list_entry value="???" short_description="Warning this may change!" icon="http://openstreetmap.pl/kendzi/preset/warn.png"/>
 				</combo>
      		</optional>     		
      	</item>
@@ -161,9 +163,9 @@
 					<list_entry value="wood" 							 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_wood.png"/>
 					<list_entry value="stone" 							 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_stone.png"/>
 					<list_entry value="glass" 							 				icon="http://openstreetmap.pl/kendzi/preset/facade_mat_glass.png"/>
-					<list_entry value="timber_framing" 							 		icon="http://openstreetmap.pl/kendzi/preset/facade_mat_timber_framing.png"/>
+					<list_entry value="timber_framing" display_value="timber framing"	icon="http://openstreetmap.pl/kendzi/preset/facade_mat_timber_framing.png"/>
 					<list_entry value="metal" 									 		icon="http://openstreetmap.pl/kendzi/preset/facade_mat_metal.png"/>
-					<list_entry value="???"		short_description="Warning this may change!" /> 
+					<list_entry value="???" short_description="Warning this may change!" icon="http://openstreetmap.pl/kendzi/preset/warn.png"/>
 				</combo>
 				<text text="Roof colour" key="roof:colour"/>
 				<!-- we need to agree some values!!! -->
@@ -179,7 +181,9 @@
 					<list_entry value="eternit" 	short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/cc2/roof_mat_eternit.png"/>
 					<list_entry value="thatch" 		short_description="" 				icon="http://openstreetmap.pl/kendzi/preset/cc2/roof_mat_thatch.png"/>
 					<list_entry value="metal" 									 		icon="http://openstreetmap.pl/kendzi/preset/facade_mat_metal.png"/>
-					<list_entry value="???" short_description="Warning this may change!"/>
+					<list_entry value="grass" 									 		icon="http://openstreetmap.pl/kendzi/preset/roof_mat_grass.png"/>
+					<list_entry value="gravel" 									 		icon="http://openstreetmap.pl/kendzi/preset/roof_mat_gravel.png"/>
+					<list_entry value="???" short_description="Warning this may change!" icon="http://openstreetmap.pl/kendzi/preset/warn.png"/>
 				</combo>
      		</optional>     		
      	</item>
