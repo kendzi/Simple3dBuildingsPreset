@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="Tomasz Kędziora (Kendzi)" shortdescription="3D Simple Buildings" description="Presets for Simple 3D building properties"
+	version="0.7"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd"	
+	>
+ 
+<!-- 
+	Many images come from wiki.openstreetmap.org 
+-->
+
+    <!-- Item chunks -->
+    <chunk id="roof_shape">
+        <combo text="Roof shape" key="roof:shape">
+			<list_entry value="flat" 		icon="Roof0_0.jpg" />
+			<list_entry value="gabled" 		icon="Roof2_0.jpg" />
+			<list_entry value="half-hipped" icon="Roof2_3.jpg" display_value="half-hipped" />
+			<list_entry value="hipped"  	icon="Roof2_4.jpg" />
+			<list_entry value="pyramidal"  	icon="Roof2_5.jpg" />
+			<list_entry value="gambrel"  	icon="Roof4_0.jpg" />
+			<list_entry value="mansard"  	icon="Roof4_2.jpg" />
+			<list_entry value="dome"  		icon="Roof5_6.jpg" />	
+		</combo>	
+    </chunk>
+    
+    <chunk id="roof_orientation">
+    	<combo text="Roof orientation" key="roof:orientation" delete_if_empty="true">					
+			<list_entry value="along"  icon="along.png"  short_description="to the longest side of the building"/>
+			<list_entry value="across" icon="across.png" short_description="to the longest side of the building"/>										
+		</combo>
+    </chunk>
+  
+    <chunk id="wall_material">
+    	<!-- we need to agree some values!!! -->
+    	<combo text="Wall material" key="building:material" delete_if_empty="true">
+			<list_entry value="plaster" 		icon="facade_mat_plaster_64.png" />
+			<list_entry value="concrete" 		icon="facade_mat_concrete.png" />
+			<list_entry value="brick" 			icon="facade_mat_brick_64.png" />
+			<list_entry value="wood" 			icon="facade_mat_wood.png" />
+			<list_entry value="stone" 			icon="facade_mat_stone.png" />
+			<list_entry value="glass" 			icon="facade_mat_glass.png" />
+			<list_entry value="timber_framing" 	icon="facade_mat_timber_framing.png" display_value="timber framing" />
+			<list_entry value="metal" 			icon="facade_mat_metal.png"/>
+			<list_entry value="???" 			icon="warn.png" 	short_description="Warning this may change!" />
+		</combo>
+	</chunk>
+	
+    <chunk id="roof_material">
+    	<!-- we need to agree some values!!! -->
+		<combo text="Roof material" key="roof:material" delete_if_empty="true">
+			<list_entry value="roof_tiles" 	icon="roof_mat_roof_tiles.png" short_description="Clasic tiles"
+						display_value="roof tiles"/>
+			<list_entry value="tar_paper" 	icon="roof_mat_tar_paper.png"
+						display_value="tar paper"/>
+			<list_entry value="concrete" 	icon="facade_mat_concrete.png"/>
+			<list_entry value="copper" 		icon="cc2/roof_mat_copper.png"/>
+			<list_entry value="glass" 		icon="facade_mat_glass.png"/>
+			<list_entry value="slate" 		icon="roof_mat_slate.png" 		short_description="Kind of stone" />
+			<list_entry value="eternit" 	icon="cc2/roof_mat_eternit.png"/>
+			<list_entry value="thatch" 		icon="cc2/roof_mat_thatch.png"/>
+			<list_entry value="metal" 		icon="facade_mat_metal.png"/>
+			<list_entry value="grass" 		icon="roof_mat_grass.png"/>
+			<list_entry value="gravel" 		icon="roof_mat_gravel.png"/>
+			<list_entry value="???" 		icon="warn.png"  				short_description="Warning this may change!" />
+		</combo>
+    </chunk>
+    
+    <group name="3D" icon="3d_icon_24.png" >
+     	<item name="Simple 3D buildings parts" type="relation,closedway" icon="3d_simple_icon_blue_32.png" >
+     		<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings" />
+			<label text="&lt;html&gt;&lt;b&gt;Building&lt;/b&gt;&lt;/html&gt;"/>	     	
+     		<label text="&lt;html&gt;&lt;i&gt;A part of building for 3D rendering&lt;/i&gt;&lt;/html&gt;"/>
+			<combo  text="Building part" key="building:part" default="yes" match="key">
+				<list_entry value="yes" icon="yes_32.png"  />
+			</combo>
+		
+	     	<optional>
+				
+				<label text="&lt;html&gt;&lt;b&gt;Height&lt;/b&gt;&lt;/html&gt;"/>							
+				<label text="&lt;html&gt;&lt;i&gt;It is measured from ground to higest point of roof without eg. antenna&lt;/i&gt;&lt;/html&gt;"/>							
+				<text text="Building height" key="height"/>
+				<label text="&lt;html&gt;&lt;i&gt;Height below the building structure&lt;/i&gt;&lt;/html&gt;"/>							
+				<text text="Building min height" key="min_height"/>
+				
+				<space/>				
+				<label text="&lt;html&gt;&lt;b&gt;Roof&lt;/b&gt;&lt;/html&gt;" />
+				
+				<reference ref="roof_shape" />
+				<reference ref="roof_orientation" />
+								
+				<space/>				
+				<label text="&lt;html&gt;&lt;i&gt;Use only one height &lt;b&gt;OR&lt;/b&gt; angle!&lt;/i&gt;" />
+				<text text="Roof height" key="roof:height"/>				
+                <text text="Roof angle" key="roof:angle"/>
+				
+				<space/>
+				<label text="&lt;html&gt;&lt;b&gt;Levels&lt;/b&gt;&lt;/html&gt;"/>
+				<text text="Building levels (non-roof)" key="building:levels"/>
+				<text text="Building min levels (non-roof)" key="building:min_level"/>
+				<text text="Roof levels" key="roof:levels"/>
+								
+				<space/>
+				<label text="&lt;html&gt;&lt;b&gt;Colors and materials&lt;/b&gt;&lt;/html&gt;"/>
+				<text text="Wall colour" key="building:colour"/>
+				<reference ref="wall_material" />
+				 
+				<text text="Roof colour" key="roof:colour"/>
+				<reference ref="roof_material" />				
+     		</optional>     		
+     	</item>
+     	
+		<item name="Simple 3D buildings outline" type="relation,closedway" icon="3d_simple_icon_green_32.png" >
+     		<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings" />
+			<label text="&lt;html&gt;&lt;b&gt;Building&lt;/b&gt;&lt;/html&gt;"/>	     	
+    
+     		<label text="&lt;html&gt;&lt;i&gt;Outline of building for 3D rendering&lt;/i&gt;&lt;/html&gt;"/>
+			<combo text="Building outline" key="building" default="yes" delete_if_empty="true" match="key">
+				<list_entry value="yes" icon="yes_32.png"  />
+			</combo>
+     		
+ 			<!-- optional section is direct copy from previous item!!! -->
+	     	<optional>
+				
+				<label text="&lt;html&gt;&lt;b&gt;Height&lt;/b&gt;&lt;/html&gt;"/>							
+				<label text="&lt;html&gt;&lt;i&gt;It is measured from ground to higest point of roof without eg. antenna&lt;/i&gt;&lt;/html&gt;"/>							
+				<text text="Building height" key="height"/>
+				<label text="&lt;html&gt;&lt;i&gt;Height below the building structure&lt;/i&gt;&lt;/html&gt;"/>							
+				<text text="Building min height" key="min_height"/>
+				
+				<space/>				
+				<label text="&lt;html&gt;&lt;b&gt;Roof&lt;/b&gt;&lt;/html&gt;"/>
+				
+				<reference ref="roof_shape" />
+				<reference ref="roof_orientation" />
+				
+				<space/>				
+				<label text="&lt;html&gt;&lt;i&gt;Use only one height &lt;b&gt;OR&lt;/b&gt; angle!&lt;/i&gt;" />
+				<text text="Roof height" key="roof:height"/>				
+                <text text="Roof angle" key="roof:angle"/>
+				
+				<space/>
+				<label text="&lt;html&gt;&lt;b&gt;Levels&lt;/b&gt;&lt;/html&gt;"/>
+				<text text="Building levels (non-roof)" key="building:levels"/>
+				<text text="Building min levels (non-roof)" key="building:min_level"/>
+				<text text="Roof levels" key="roof:levels"/>
+								
+				<space/>
+				<label text="&lt;html&gt;&lt;b&gt;Colors and materials&lt;/b&gt;&lt;/html&gt;"/>
+				
+				<text text="Wall colour" key="building:colour"/>
+				<reference ref="wall_material" />
+				 
+				<text text="Roof colour" key="roof:colour"/>
+				<reference ref="roof_material" />
+     		</optional>     		
+     	</item>
+
+		       
+        <item name="Colors and materials" type="relation,closedway"  icon="building_colors_32.png" >
+       		<text text="Wall colour" key="building:colour" match="key" />
+       		<reference ref="wall_material" />
+			 
+			<text text="Roof colour" key="roof:colour" match="key"/>
+			<reference ref="roof_material" />
+        </item>
+        
+        <item name="Roof 3dr" type="relation,closedway" icon="roof_icon_red_32.png" >
+            <link href="http://wiki.openstreetmap.org/wiki/Roof_table" />
+
+            <combo key="3dr:type" text="&lt;html&gt;&lt;b&gt;Roof type&lt;/b&gt;&lt;/html&gt;" match="key">
+            	<list_entry value="0.0" short_description="flat" 			icon="Roof0_0.jpg" />
+            	<list_entry value="0.1" short_description="" 				icon="Roof0_1.jpg"/>
+            	<list_entry value="0.2" short_description="" 				icon="Roof0_2.jpg"/>
+            	<list_entry value="0.3" short_description="" 				icon="Roof0_3.jpg"/>
+				<list_entry value="1.0" short_description="skillion"		icon="Roof1_0.jpg"   />
+				<list_entry value="1.1" short_description="" 				icon="Roof1_1.jpg"   />
+				<list_entry value="2.0" short_description="gabled" 			icon="Roof2_0.jpg" />
+				<list_entry value="2.1" short_description="" 				icon="Roof2_1.jpg" />
+				<list_entry value="2.2" short_description="" 				icon="Roof2_2.jpg" />
+				<list_entry value="2.3" short_description="half-hipped"		icon="Roof2_3.jpg" />
+				<list_entry value="2.4" short_description="hipped"			icon="Roof2_4.jpg" />
+				<list_entry value="2.5" short_description="pyramidal" 	 	icon="Roof2_5.jpg" />
+				<list_entry value="2.6" short_description=""  				icon="Roof2_6.jpg" />
+				<list_entry value="2.7" short_description=""  				icon="Roof2_7.jpg" />
+				<list_entry value="2.8" short_description=""  				icon="Roof2_8.jpg" />
+				<list_entry value="2.9" short_description=""  				icon="Roof2_9.jpg" />
+				<list_entry value="3.0" short_description="saltbox" 		icon="Roof3_0.jpg" />
+				<list_entry value="3.1" short_description="double_saltbox"	icon="Roof3_1.jpg" />
+				<list_entry value="3.2" short_description="corner_saltbox" 	icon="Roof3_2.jpg" />
+				<list_entry value="3.3" short_description="triple_saltbox" 	icon="Roof3_3.jpg" />
+				<list_entry value="3.4" short_description="quadruple_saltbox"	icon="Roof3_4.jpg" />
+				<list_entry value="4.0" short_description="gambrel" 		icon="Roof4_0.jpg" />
+				<list_entry value="4.1" short_description="" 				icon="Roof4_1.jpg" />
+				<list_entry value="4.2" short_description="mansard" 		icon="Roof4_2.jpg" />
+				<list_entry value="4.2.1" short_description="" 				icon="Roof4_2_1.jpg" />
+				<list_entry value="4.3" short_description="helm" 			 />
+				<list_entry value="5.0" short_description="round" />
+				<list_entry value="5.2" short_description="half_round" />
+				<list_entry value="5.6" short_description="dome" 			icon="Roof5_6.jpg" />
+				<list_entry value="6.0" short_description="three_aisled" />
+				<list_entry value="6.2" short_description="crosspitched" />
+				<list_entry value="6.3" short_description="five_aisled" />
+				<list_entry value="7.1" short_description="sawtooth" />
+				<list_entry value="7.2" short_description="trapeze" />
+				<list_entry value="7.3" short_description="gabled_row" />
+				<list_entry value="7.4" short_description="round_row" />
+				<list_entry value="7.5" short_description="wave" />
+				<list_entry value="6.4.4" short_description="" 				icon="Roof6_4_4.jpg" />
+				<list_entry value="9.0" short_description="" 				icon="Roof9_0.jpg" />
+				<list_entry value="9.1" short_description="" 				icon="Roof9_1.jpg" />
+				<list_entry value="9.2" short_description="" 				icon="Roof9_2.jpg" />
+            </combo> 
+                        
+            <optional>            	
+               	<label text="&lt;html&gt;&lt;i&gt;Mark roof direction using tags: &lt;b&gt;3dr:direction=begin|end&lt;/b&gt; on outline nodes&lt;/i&gt;&lt;/html&gt;"/>                
+                
+                <reference ref="roof_orientation" />
+                            	
+            	<space />
+                <text key="3dr:height1" text="First height" default="" delete_if_empty="true" />
+               	<text key="3dr:lenght1" text="First lenght" default="" delete_if_empty="true" />
+               	<text key="3dr:height2" text="Second height" default="" delete_if_empty="true" />
+               	<text key="3dr:lenght2" text="Second lenght" default="" delete_if_empty="true" />
+            </optional>             
+        </item>
+        
+        <item name="Roof shape" type="relation,closedway" icon="roof_icon_blue_32.png" >
+      		<link href="http://wiki.openstreetmap.org/wiki/Roof_table" />
+            
+            <combo text="&lt;html&gt;&lt;b&gt;Roof shape&lt;/b&gt;&lt;html&gt;" key="roof:shape" values="flat,skillion,gabled,half-hipped,hipped,pyramidal,saltbox,double_saltbox,corner_saltbox,triple_saltbox,quadruple_saltbox,gambrel,mansard,helm,round,half_round,dome,three_aisled,crosspitched,five_aisled,sawtooth,trapeze,gabled_row,round_row,wave,onion" default="" delete_if_empty="true" match="key"/>
+
+            <optional>	
+            	<reference ref="roof_orientation" />
+								
+				<space />
+				<label text="&lt;html&gt;&lt;i&gt;Use only one roof height &lt;b&gt;OR&lt;/b&gt; angle!&lt;/i&gt;&lt;/html&gt;"/>
+				<text text="Roof height" key="roof:height"/>				
+                <text text="Roof angle" key="roof:angle"/>                
+
+            </optional>
+       </item>
+       
+       <item name="Roof lines" type="relation,closedway" icon="roof_icon_yellow_32.png" >
+       		<link href="http://wiki.openstreetmap.org/wiki/User:Aschilli/ProposedRoofLines" />
+           	
+           	<label text="&lt;html&gt;&lt;i&gt;Outline of building for 3D rendering&lt;/i&gt;&lt;/html&gt;"/>	     		
+			<combo text="Building outline" key="building" default="yes" delete_if_empty="true">
+           		<list_entry value="yes" icon="yes_32.png"  />
+			</combo>
+            <label text="&lt;html&gt;&lt;i&gt;A part of a building for 3D rendering&lt;/i&gt;&lt;/html&gt;"/>
+			<combo text="Building part" key="building:part"  delete_if_empty="true">
+				<list_entry value="yes" icon="yes_32.png"  />
+			</combo>
+            
+       		<label text="TODO"/>
+       </item>  
+    </group>
+</presets>
