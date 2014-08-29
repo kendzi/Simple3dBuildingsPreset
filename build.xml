@@ -5,11 +5,11 @@
 	<property name="folder-to-zip" value="zip-me" />
 
 	<target name="clean">
-		<delete file="build/${project-name}.zip" />		
+		<delete file="build/${project-name}.zip" />
 	</target>
 
-	<target name="zip">
+	<target name="zip" depends="clean" >
 		<zip destfile="build/${project-name}.zip" basedir="." excludes="build,build/*,raw,raw/*,build.xml,.project,dont*.*" />
 	</target>
- 
+
 </project>
