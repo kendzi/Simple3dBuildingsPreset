@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="Tomasz Kędziora (Kendzi)" shortdescription="3D Simple Buildings" description="Presets for Simple 3D building properties"
-	version="0.8_2014-08-29"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd"
-	>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
+	author="Tomasz Kędziora (Kendzi)" 
+	shortdescription="3D Simple Buildings" 
+	description="Presets for Simple 3D building properties"
+	version="0.9_2018-05-08"
+>
 
 <!--
 	Many images come from wiki.openstreetmap.org
@@ -70,7 +71,7 @@
 
 	<group name="3D" icon="3d_icon_24.png" >
 		<item name="Simple 3D buildings parts" type="relation,closedway" icon="3d_simple_icon_blue_32.png" >
-			<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings" />
+			<link href="https://wiki.openstreetmap.org/wiki/Simple_3D_Buildings" />
 			<label text="&lt;html&gt;&lt;b&gt;Building&lt;/b&gt;&lt;/html&gt;"/>
 			<label text="&lt;html&gt;&lt;i&gt;A part of building for 3D rendering&lt;/i&gt;&lt;/html&gt;"/>
 			<combo  text="Building part" key="building:part" default="yes" match="key">
@@ -113,7 +114,7 @@
 		</item>
 
 		<item name="Simple 3D buildings outline" type="relation,closedway" icon="3d_simple_icon_green_32.png" >
-			<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings" />
+			<link href="https://wiki.openstreetmap.org/wiki/Simple_3D_Buildings" />
 			<label text="&lt;html&gt;&lt;b&gt;Building&lt;/b&gt;&lt;/html&gt;"/>
 
 			<label text="&lt;html&gt;&lt;i&gt;Outline of building for 3D rendering&lt;/i&gt;&lt;/html&gt;"/>
@@ -168,7 +169,7 @@
 		</item>
 
 		<item name="Roof 3dr" type="relation,closedway" icon="roof_icon_red_32.png" >
-			<link href="http://wiki.openstreetmap.org/wiki/Roof_table" />
+			<link href="https://wiki.openstreetmap.org/wiki/Roof_table" />
 
 			<combo key="3dr:type" text="&lt;html&gt;&lt;b&gt;Roof type&lt;/b&gt;&lt;/html&gt;" match="key">
 				<list_entry value="0.0" short_description="flat"			icon="Roof0_0.jpg" />
@@ -229,7 +230,7 @@
 		</item>
 
 		<item name="Roof shape" type="relation,closedway" icon="roof_icon_blue_32.png" >
-			<link href="http://wiki.openstreetmap.org/wiki/Roof_table" />
+			<link href="https://wiki.openstreetmap.org/wiki/Roof_table" />
 
 			<combo text="&lt;html&gt;&lt;b&gt;Roof shape&lt;/b&gt;&lt;html&gt;" key="roof:shape" values="flat,skillion,gabled,half-hipped,hipped,pyramidal,saltbox,double_saltbox,corner_saltbox,triple_saltbox,quadruple_saltbox,gambrel,mansard,helm,round,half_round,dome,three_aisled,crosspitched,five_aisled,sawtooth,trapeze,gabled_row,round_row,wave,onion" default="" delete_if_empty="true" match="key"/>
 
@@ -245,7 +246,7 @@
 		</item>
 
 		<item name="Roof lines" type="relation,closedway" icon="roof_icon_yellow_32.png" >
-			<link href="http://wiki.openstreetmap.org/wiki/User:Aschilli/ProposedRoofLines" />
+			<link href="https://wiki.openstreetmap.org/wiki/User:Aschilli/ProposedRoofLines" />
 
 			<label text="&lt;html&gt;&lt;i&gt;Outline of building for 3D rendering&lt;/i&gt;&lt;/html&gt;"/>
 			<combo text="Building outline" key="building" default="yes" delete_if_empty="true">
