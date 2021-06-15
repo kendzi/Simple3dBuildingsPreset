@@ -3,7 +3,7 @@
 	author="Tomasz Kędziora (Kendzi)" 
 	shortdescription="3D Simple Buildings" 
 	description="Presets for Simple 3D building properties"
-	version="0.9_2018-05-08"
+	version="1.0.1"
 >
 
 <!--
@@ -232,7 +232,34 @@
 		<item name="Roof shape" type="relation,closedway" icon="roof_icon_blue_32.png" >
 			<link href="https://wiki.openstreetmap.org/wiki/Roof_table" />
 
-			<combo text="&lt;html&gt;&lt;b&gt;Roof shape&lt;/b&gt;&lt;html&gt;" key="roof:shape" values="flat,skillion,gabled,half-hipped,hipped,pyramidal,saltbox,double_saltbox,corner_saltbox,triple_saltbox,quadruple_saltbox,gambrel,mansard,helm,round,half_round,dome,three_aisled,crosspitched,five_aisled,sawtooth,trapeze,gabled_row,round_row,wave,onion" default="" delete_if_empty="true" match="key"/>
+			<combo text="&lt;html&gt;&lt;b&gt;Roof shape&lt;/b&gt;&lt;html&gt;" key="roof:shape" default="" delete_if_empty="true" match="key">
+				<list_entry value="flat"		icon="Roof0_0.jpg" />
+				<list_entry value="skillion"	icon="Roof1_0.jpg" />
+				<list_entry value="gabled"		icon="Roof2_0.jpg" />
+				<list_entry value="half-hipped" icon="Roof2_3.jpg" display_value="half-hipped" />
+				<list_entry value="hipped"		icon="Roof2_4.jpg" />
+				<list_entry value="pyramidal"	icon="Roof2_5.jpg" />
+				<list_entry value="saltbox" />
+				<list_entry value="double_saltbox" />
+				<list_entry value="corner_saltbox" />
+				<list_entry value="triple_saltbox"/>
+				<list_entry value="quadruple_saltbox" />
+				<list_entry value="gambrel"		icon="Roof4_0.jpg" />
+				<list_entry value="mansard"		icon="Roof4_2.jpg" />
+				<list_entry value="helm" />
+				<list_entry value="dome"		icon="Roof5_6.jpg" />
+				<list_entry value="onion"		icon="Roof8.jpg" />
+				<list_entry value="round"		icon="Roof5_0.jpg" />
+				<list_entry value="half_round" />
+				<list_entry value="three_aisled" />
+				<list_entry value="crosspitched" />
+				<list_entry value="five_aisled" />
+				<list_entry value="sawtooth" />
+				<list_entry value="trapeze" />
+				<list_entry value="gabled_row" />
+				<list_entry value="round_row" />
+				<list_entry value="wave" />
+			</combo>
 
 			<optional>
 				<reference ref="roof_orientation" />
